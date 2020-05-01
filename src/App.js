@@ -1,11 +1,12 @@
-import React, { Fragment } from "react";
-import { Background, Search, Time } from "./components";
+import React, { Fragment, useEffect } from "react";
+import { Background, Time } from "./components";
 
 export default function App() {
+  useEffect(() => document.body.blur(), []);
+
   return (
     <Fragment>
       <Background />
-      <Search />
       <Time />
     </Fragment>
   );
