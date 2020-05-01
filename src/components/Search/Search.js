@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import styled from "styled-components";
 
 const Form = styled.form`
@@ -21,9 +21,15 @@ const Input = styled.input`
 `;
 
 export default function Search() {
+  const inputEl = useRef(null);
+
+  useEffect(() => {
+    inputEl.current.focus();
+  }, []);
+
   return (
     <Form action="https://www.google.com/search" method="get">
-      <Input type="text" name="q" alt="search" />
+      <Input type="text" name="q" alt="search" ref={inputEl} />
     </Form>
   );
 }

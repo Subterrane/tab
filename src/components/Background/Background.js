@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import styled from "styled-components";
 
 const defaultBgStyle = {
@@ -52,9 +52,9 @@ export default function Background() {
   }, []);
 
   return (
-    <>
+    <Fragment>
       <BGContainer style={bgStyle} />
       <BGOpacity />
-    </>
+    </Fragment>
   );
 }
