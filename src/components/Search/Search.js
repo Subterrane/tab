@@ -22,7 +22,7 @@ const Input = styled.input`
 
 export default function Search() {
   return (
-    <Form action="http://www.google.com/search" method="get">
+    <Form action="https://www.google.com/search" method="get">
       <Input type="text" name="q" alt="search" />
     </Form>
   );
