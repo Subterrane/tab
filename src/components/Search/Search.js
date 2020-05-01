@@ -14,7 +14,7 @@ const Input = styled.input`
   color: #fff;
   background: transparent;
   font-family: Gruppo, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 3em;
   text-shadow: 1px 1px 3px black;
   text-align: center;
   padding: 10px;
